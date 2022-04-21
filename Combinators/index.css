@@ -1,0 +1,20 @@
+
+* {
+    background-color: #563d7c;
+}
+
+.d1 p {
+    background-color: skyblue;
+  }
+
+.d2 >p {
+    background-color: skyblue;
+}
+
+.d3 + p {
+    background-color: skyblue;
+}
+
+.d3 ~ p {
+    background-color: skyblue;
+}

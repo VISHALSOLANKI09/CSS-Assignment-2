@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>CSS Combinators</title>
+</head>
+<body>
+    <h1 id="heading">CSS Combinators</h2>
+    
+    <div class="container">
+        <p class="label"><b>1. Descendant Selector( )</b> </p>
+        <p>The descendant selector matches all elements that are descendants of a specified element.
+        
+        <div class="d1">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section><p>Paragraph 3 in the div.</p></section>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="label"><b>2. Child Selector(>)</b> </p>
+        <p>The child selector selects all elements that are the children of a specified element.
+        
+        <div class="d2">
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+            <section><p>Paragraph 3 in the div.(This is descendant not a child)</p></section>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="label"><b>3. Adjacent Sibling Selector(+)</b> </p>
+        <p>The adjacent sibling selector is used to select an element that is directly after another specific element.
+            Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+        <div class="d3">
+            <p>Paragraph 1 in the div.</p>
+        </div>
+        <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <div class="container">
+        <p class="label"><b>4. General Sibling Selector(~)</b> </p>
+        <p>The general sibling selector selects all elements that are next siblings of a specified element
+        
+            <div class="d3">
+            <p>Paragraph 1 in the div.(This is a child element, not a sibling)</p>
+        </div>
+        <p>Paragraph 2 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+    </div>
+</body>
+</html>
